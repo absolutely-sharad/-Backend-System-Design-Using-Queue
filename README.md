@@ -147,7 +147,7 @@ backend-queue-system/
 
 - Provided detailed documentation explaining the system architecture and code. The documentation includes an overview of the system design, implementation details, and instructions for setting up and running the system.
 
-##☞ Conclusion
+## ☞ Conclusion
 
 This assignment aims to design and implement a robust and scalable backend system using a queue structure to manage requests from multiple users efficiently. The system ensures that all requests are processed sequentially and that the queue is empty once all requests are processed and all users disconnect. The implementation uses Node.js, RabbitMQ, PostgreSQL, Prometheus, and Grafana to achieve the objectives.
 
