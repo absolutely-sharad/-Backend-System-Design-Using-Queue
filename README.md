@@ -55,7 +55,7 @@ This project implements a backend system that efficiently manages requests from 
 
 - A detailed diagram of how requests are received, authenticated, queued, processed, and logged.
 
-## Submission Requirements
+## 📁 Submission Requirements
 
 - Source code for all components.
 - Dockerfiles for building container images.
@@ -105,33 +105,33 @@ backend-queue-system/
 │── README.md
 ```
 
-## Implementation Details
+## 🕵 Implementation Details
 
-### User Authentication
+### 🔑 User Authentication
 
 - Implemented secure user authentication using JWT (JSON Web Tokens) to ensure that only authenticated users can enqueue requests.
 
-### Request Queueing
+### 〰️ Request Queueing
 
 - Utilized RabbitMQ for implementing queues for each client. Each client has a dedicated queue to handle requests in a FIFO manner.
 
-### Request Processing
+### 👨🏻‍💻 Request Processing
 
 - Developed worker processes that pull requests from the queues and execute them sequentially. The workers ensure that each request is processed in the order it was received.
 
-### Concurrency Management
+### 🏃🏼 Concurrency Management
 
 - The system handles multiple clients and their queues concurrently using Node.js's asynchronous capabilities and RabbitMQ's concurrency features.
 
-### Scalability
+### 👦🏼👩🏼‍💼 Scalability
 
 - The system is designed to scale horizontally by adding more worker processes and queue instances as the number of users and requests increases.
 
-### Robustness
+### 🐞 Robustness
 
 - Implemented error handling and recovery mechanisms to manage failures without data loss. The system ensures that all requests are processed even in the event of a failure.
 
-### Logging and Monitoring
+### 🖥️ Logging and Monitoring
 
 - Set up logging using Winston for tracking request handling and system monitoring using Prometheus and Grafana for performance metrics.
 
@@ -147,11 +147,7 @@ backend-queue-system/
 
 - Provided detailed documentation explaining the system architecture and code. The documentation includes an overview of the system design, implementation details, and instructions for setting up and running the system.
 
-## ☞ Conclusion
-
-This assignment aims to design and implement a robust and scalable backend system using a queue structure to manage requests from multiple users efficiently. The system ensures that all requests are processed sequentially and that the queue is empty once all requests are processed and all users disconnect. The implementation uses Node.js, RabbitMQ, PostgreSQL, Prometheus, and Grafana to achieve the objectives.
-
-##📌 Contributing
+## 📌 Contributing
 
 - Fork the repository.
 - Create a new feature branch (git checkout -b feature-name).
@@ -164,3 +160,8 @@ This assignment aims to design and implement a robust and scalable backend syste
 - Replace `Sharad Singh Kushwaha` and `Backend-System-Design-Using-Queue` with your actual GitHub username and repository name.
 - Update `sharadsingh0203@gmail.com` with your email.
 - Modify the API endpoints section according to your implementation.
+
+
+## ☞ Conclusion
+
+This assignment aims to design and implement a robust and scalable backend system using a queue structure to manage requests from multiple users efficiently. The system ensures that all requests are processed sequentially and that the queue is empty once all requests are processed and all users disconnect. The implementation uses Node.js, RabbitMQ, PostgreSQL, Prometheus, and Grafana to achieve the objectives.
