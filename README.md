@@ -19,13 +19,13 @@ This project implements a backend system that efficiently manages requests from 
 - **Monitoring**:  Grafana
 
 
-## System Design
+##📺 System Design
 
 - **Client-Server Model**: Users interact with the system through a client interface that sends requests to the server.
 - **Queue Management**: Each client connection has a dedicated queue. A queue manager handles the creation, management, and deletion of queues.
 - **Worker Processes**: Dedicated worker processes pull requests from queues and execute them sequentially.
 
-## Assignment Tasks
+##✍🏼 Assignment Tasks
 
 ### 1. System Architecture
 
@@ -45,7 +45,7 @@ This project implements a backend system that efficiently manages requests from 
 
 - Prepare a deployment plan using Docker containers for each component of the system.
 
-## Flow Diagrams
+##⚘ Flow Diagrams
 
 ### 1. Overall System Flow
 
@@ -64,7 +64,46 @@ This project implements a backend system that efficiently manages requests from 
 - Documentation explaining the system architecture and code.
 
 ## 📂 Project Structure
-/src │── config/ # Configuration files (DB, Redis, etc.) │── controllers/ # Business logic and route handlers │── middleware/ # Authentication and validation middleware │── models/ # Database models (MongoDB, PostgreSQL) │── routes/ # API routes (auth, queue) │── services/ # Services for handling business logic │── worker/ # Background worker processes │── index.js # Entry point of the server │── server.js # Express server configuration │── .env # Environment variables /test # Unit and integration tests1
+```
+backend-queue-system/
+│── src/
+│   │── config/
+│   │   │── config.js
+│   │   │── db.js
+│   │   │── redis.js
+│   │── controllers/
+│   │   │── authController.js
+│   │   │── queueController.js
+│   │── middleware/
+│   │   │── authMiddleware.js
+│   │── models/
+│   │   │── requestModel.js
+│   │   │── userModel.js
+│   │── routes/
+│   │   │── authRoutes.js
+│   │   │── queueRoutes.js
+│   │── services/
+│   │   │── authService.js
+│   │   │── queueService.js
+│   │   │── workerService.js
+│   │── worker/
+│   │   │── worker.js
+│   │── utils/
+│   │   │── errorHandler.js
+│   │   │── logger.js
+│   │   │── validator.js
+│   │── index.js
+│   │── server.js
+│── test/
+│   │── auth.test.js
+│   │── queue.test.js
+│   │── worker.test.js
+│── .env
+│── .gitignore
+│── package.json
+│── package-lock.json
+│── README.md
+```
 
 ## Implementation Details
 
@@ -96,7 +135,7 @@ This project implements a backend system that efficiently manages requests from 
 
 - Set up logging using Winston for tracking request handling and system monitoring using Prometheus and Grafana for performance metrics.
 
-## Testing
+##🪛 Testing
 
 - Wrote unit tests using Mocha and Chai to verify the system's functionality under various scenarios. The tests cover user authentication, request queueing, request processing, and error handling.
 
@@ -108,7 +147,7 @@ This project implements a backend system that efficiently manages requests from 
 
 - Provided detailed documentation explaining the system architecture and code. The documentation includes an overview of the system design, implementation details, and instructions for setting up and running the system.
 
-## Conclusion
+##☞ Conclusion
 
 This assignment aims to design and implement a robust and scalable backend system using a queue structure to manage requests from multiple users efficiently. The system ensures that all requests are processed sequentially and that the queue is empty once all requests are processed and all users disconnect. The implementation uses Node.js, RabbitMQ, PostgreSQL, Prometheus, and Grafana to achieve the objectives.
 
