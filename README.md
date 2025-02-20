@@ -19,13 +19,13 @@ This project implements a backend system that efficiently manages requests from 
 - **Monitoring**:  Grafana
 
 
-##📺 System Design
+## 📺 System Design
 
 - **Client-Server Model**: Users interact with the system through a client interface that sends requests to the server.
 - **Queue Management**: Each client connection has a dedicated queue. A queue manager handles the creation, management, and deletion of queues.
 - **Worker Processes**: Dedicated worker processes pull requests from queues and execute them sequentially.
 
-##✍🏼 Assignment Tasks
+## ✍🏼 Assignment Tasks
 
 ### 1. System Architecture
 
@@ -135,15 +135,15 @@ backend-queue-system/
 
 - Set up logging using Winston for tracking request handling and system monitoring using Prometheus and Grafana for performance metrics.
 
-##🪛 Testing
+## 🪛 Testing
 
 - Wrote unit tests using Mocha and Chai to verify the system's functionality under various scenarios. The tests cover user authentication, request queueing, request processing, and error handling.
 
-## Deployment
+## 🖥️ Deployment
 
 - Prepared a deployment plan using Docker containers for each component of the system. The Dockerfiles for building container images are included in the submission.
 
-## Documentation
+## 📄 Documentation
 
 - Provided detailed documentation explaining the system architecture and code. The documentation includes an overview of the system design, implementation details, and instructions for setting up and running the system.
 
@@ -159,7 +159,7 @@ This assignment aims to design and implement a robust and scalable backend syste
 - Push to the branch (git push origin feature-name).
 - Open a pull request.
 
-##Contact
+## 📞 Contact
 ### Notes:
 - Replace `Sharad Singh Kushwaha` and `Backend-System-Design-Using-Queue` with your actual GitHub username and repository name.
 - Update `sharadsingh0203@gmail.com` with your email.
