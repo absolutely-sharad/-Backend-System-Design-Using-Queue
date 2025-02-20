@@ -1,4 +1,3 @@
-```markdown
 # Backend System Design Using Queue
 
 ## 📌 Project Overview
@@ -126,6 +125,3 @@ This assignment aims to design and implement a robust and scalable backend syste
 - Replace `Sharad Singh Kushwaha` and `Backend-System-Design-Using-Queue` with your actual GitHub username and repository name.
 - Update `sharadsingh0203@gmail.com` with your email.
 - Modify the API endpoints section according to your implementation.
-
-
-```
